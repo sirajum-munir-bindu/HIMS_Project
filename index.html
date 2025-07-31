@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- External CSS  -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- Font Awesome CDN  -->
     <link
       rel="stylesheet"
@@ -19,11 +19,11 @@
     <title>Hospital Information Management System</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container sticky-top">
       <div class="row">
         <div class="col-12">
           <!-- Navbar start -->
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img
@@ -52,7 +52,7 @@
                 >
                   <li class="nav-item">
                     <a
-                      class="nav-link active"
+                      class="nav-link active text-primary"
                       aria-current="page"
                       href="#"
                       style="font-size: 25px; font-weight: 680"
@@ -61,7 +61,7 @@
                   </li>
                   <li class="nav-item">
                     <a
-                      class="nav-link"
+                      class="nav-link text-primary"
                       href="#"
                       style="font-size: 25px; font-weight: 680"
                       >Doctors</a
@@ -69,16 +69,16 @@
                   </li>
                   <li class="nav-item">
                     <a
-                      class="nav-link"
+                      class="nav-link text-primary"
                       href="#"
                       style="font-size: 25px; font-weight: 680"
                       >Departments</a
                     >
                   </li>
                 </ul>
-                <li class="nav-item dropdown d-flex" >
+                <li class="nav-item dropdown d-flex">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle text-primary"
                     href="#"
                     id="navbarScrollingDropdown"
                     role="button"
@@ -86,26 +86,364 @@
                     aria-expanded="false"
                     style="font-size: 22px; font-weight: 680"
                   >
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-user text-primary"></i>
                   </a>
                   <ul
                     class="dropdown-menu"
                     aria-labelledby="navbarScrollingDropdown"
                   >
-                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li>
+                      <a class="dropdown-item text-primary" href="#">Login</a>
+                    </li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="#">Registration</a>
+                      <a class="dropdown-item text-primary" href="#"
+                        >Registration</a
+                      >
                     </li>
                   </ul>
                 </li>
               </div>
             </div>
           </nav>
-          <!-- Navbar end -->
         </div>
       </div>
     </div>
+    <!-- Navbar end -->
+
+    <!-- <hr class="w-100 border-primary border-2" /> -->
+
+    <!-- Slider start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./media/Slider1.webp"
+                  class="d-block w-100"
+                  alt="SLIDER IMAGE 1"
+                  style="height: 500px; width: auto"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./media/Slider2.avif"
+                  class="d-block w-100"
+                  alt="SLIDER IMAGE 2"
+                  style="height: 500px; width: auto"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./media/Slider3.webp"
+                  class="d-block w-100"
+                  alt="SLIDER IMAGE 3"
+                  style="height: 500px; width: auto"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slider end -->
+
+    <!-- Card Section start -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center fw-bold">Our Departments</h2>
+          <hr class="w-25 border-primary mx-auto border-3 opacity-50" />
+
+          <div
+            class="row row-cols-1 row-cols-md-3 g-4 modal-dialog modal-dialog-scrollable"
+          >
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img
+                  src="./media/dept-card-img-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><b>General Medicine</b></h5>
+                  <p class="card-text">
+                    The General Medicine department, also known as Internal
+                    Medicine, focuses on the diagnosis, treatment, and
+                    prevention of diseases in adults.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img
+                  src="./media/dept-card-img-2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><b>Surgical</b></h5>
+                  <p class="card-text">
+                    Mayo Clinic is one of the largest and most experienced
+                    surgical practices in the world. Mayo has more than 300
+                    surgeons and 139 operating rooms among its three locations
+                    in Arizona, Florida and Minnesota.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img
+                  src="./media/dept-card-img-3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><b>Women and Child Health</b></h5>
+                  <p class="card-text">
+                    The "Women and Child Health department" generally refers to
+                    a specialized area within healthcare focused on the
+                    well-being of women and children.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card Section end -->
+
+    <!-- Footer start -->
+
+    <div class="container py-5">
+      <div class="row">
+        <!-- Service -->
+        <div class="col-md-3">
+          <h6 class="border-bottom pb-2 mb-3">Service</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Teleconsultation with our Doctors</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Book Appointment</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Send Inquiry</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Find a Doctor</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• See Conditions and Treatments</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• View Our Clinics and Centers</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Subscribe to Free E-Newsletter</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Laboratory Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• BI-IRB</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Healthcare to your home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Refill Medicine</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Health Risk Assessment</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Bumrungrad Wallet</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Corporate -->
+        <div class="col-md-3">
+          <h6 class="border-bottom pb-2 mb-3">Corporate</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Investor Relations</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Corporate Information</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Newsroom</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Corporate Governance</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Information Request</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Investor Kits</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Blog & News -->
+        <div class="col-md-3">
+          <h6 class="border-bottom pb-2 mb-3">Blog & News</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Bumrungrad Health Blog</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• News</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Bumrungrad Health Vault</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Site Information -->
+        <div class="col-md-3">
+          <h6 class="border-bottom pb-2 mb-3">Site Information</h6>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• About Bumrungrad</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Bumrungrad application</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Our Clinics and Centers</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Inpatient Rooms</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-block text-decoration-none text-muted small"
+                >• Food & Beverage & Shopping</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-lg-start mt-5">
+      <div class="text-center p-3 bg-primary text-white">
+        © 2023 Hospital Information Management System
+        <a class="text-white" href="#">Visit our website</a>
+      </div>
+    </footer>
+    <!-- Footer end -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
