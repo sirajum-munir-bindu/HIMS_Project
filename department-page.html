@@ -119,9 +119,7 @@
           <h2 class="text-center fw-bold">Our Departments</h2>
           <hr class="w-25 border-primary mx-auto border-3 opacity-50" />
 
-          <div
-            class="row row-cols-1 row-cols-md-3 g-4 modal-dialog modal-dialog-scrollable"
-          >
+          <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100 shadow">
                 <img
@@ -137,6 +135,14 @@
                     prevention of diseases in adults.
                   </p>
                 </div>
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#generalCardModal"
+                  >
+                    View Details
+                  </button>
               </div>
             </div>
             <div class="col">
@@ -155,6 +161,14 @@
                     in Arizona, Florida and Minnesota.
                   </p>
                 </div>
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#surgicalCardModal"
+                  >
+                    View Details
+                  </button>
               </div>
             </div>
             <div class="col">
@@ -172,6 +186,14 @@
                     well-being of women and children.
                   </p>
                 </div>
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#childCardModal"
+                  >
+                    View Details
+                  </button>
               </div>
             </div>
             <div class="col">
@@ -182,13 +204,21 @@
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title"><b>General Medicine</b></h5>
+                  <h5 class="card-title"><b>Diagnostic and Support</b></h5>
                   <p class="card-text">
                     The General Medicine department, also known as Internal
                     Medicine, focuses on the diagnosis, treatment, and
                     prevention of diseases in adults.
                   </p>
                 </div>
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#diagnosticCardModal"
+                  >
+                    View Details
+                  </button>
               </div>
             </div>
             <div class="col">
@@ -199,7 +229,7 @@
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title"><b>Surgical</b></h5>
+                  <h5 class="card-title"><b>Emergency</b></h5>
                   <p class="card-text">
                     Mayo Clinic is one of the largest and most experienced
                     surgical practices in the world. Mayo has more than 300
@@ -207,6 +237,14 @@
                     in Arizona, Florida and Minnesota.
                   </p>
                 </div>
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#emergencyCardModal"
+                  >
+                    View Details
+                  </button>
               </div>
             </div>
             <div class="col">
@@ -217,13 +255,21 @@
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title"><b>Women and Child Health</b></h5>
+                  <h5 class="card-title"><b>Specialized Care</b></h5>
                   <p class="card-text">
-                    The "Women and Child Health department" generally refers to
-                    a specialized area within healthcare focused on the
-                    well-being of women and children.
+                    The "Specialized Care department" generally refers to a
+                    specialized area within healthcare focused on the well-being
+                    of patients with specific conditions or needs.
                   </p>
                 </div>
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#specializedCardModal"
+                  >
+                    View Details
+                  </button>
               </div>
             </div>
           </div>
@@ -408,6 +454,341 @@
       </div>
     </footer>
     <!-- Footer end -->
+
+    <!-- Modal -->
+
+    <div
+      class="modal fade"
+      id="generalCardModal"
+      tabindex="-1"
+      aria-labelledby="cardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cardModalLabel">
+              General Medicine
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Card Structure Inside Modal -->
+            <div class="card shadow">
+              <img
+                src="./media/dept-card-img-1.jpg"
+                class="card-img-top"
+                alt="Surgery Department"
+              />
+              <div class="card-body">
+                <h5 class="card-title"><b>General Medicine</b></h5>
+                <p class="card-text">
+                  Mayo Clinic is one of the largest and most experienced
+                  surgical practices in the world. Mayo has more than 300
+                  surgeons and 139 operating rooms among its three locations in
+                  <b>Arizona, Florida</b> and <b>Minnesota</b>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="./doctors-page.html" class="btn btn-primary">View All Doctors</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div
+      class="modal fade"
+      id="surgicalCardModal"
+      tabindex="-1"
+      aria-labelledby="cardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cardModalLabel">
+              Surgical Department
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Card Structure Inside Modal -->
+            <div class="card shadow">
+              <img
+                src="./media/dept-card-img-2.jpg"
+                class="card-img-top"
+                alt="Surgery Department"
+              />
+              <div class="card-body">
+                <h5 class="card-title"><b>Surgical</b></h5>
+                <p class="card-text">
+                  Mayo Clinic is one of the largest and most experienced
+                  surgical practices in the world. Mayo has more than 300
+                  surgeons and 139 operating rooms among its three locations in
+                  <b>Arizona, Florida</b> and <b>Minnesota</b>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="./doctors-page.html" class="btn btn-primary">View All Doctors</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div
+      class="modal fade"
+      id="childCardModal"
+      tabindex="-1"
+      aria-labelledby="cardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cardModalLabel">
+              Women and Child Health
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Card Structure Inside Modal -->
+            <div class="card shadow">
+              <img
+                src="./media/dept-card-img-3.jpg"
+                class="card-img-top"
+                alt="Women and Child Health Department"
+              />
+              <div class="card-body">
+                <h5 class="card-title"><b>Women and Child Health</b></h5>
+                <p class="card-text">
+                  Mayo Clinic is one of the largest and most experienced
+                  surgical practices in the world. Mayo has more than 300
+                  surgeons and 139 operating rooms among its three locations in
+                  <b>Arizona, Florida</b> and <b>Minnesota</b>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="./doctors-page.html" class="btn btn-primary">View All Doctors</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div
+      class="modal fade"
+      id="diagnosticCardModal"
+      tabindex="-1"
+      aria-labelledby="cardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cardModalLabel">
+              Diagnostic and Support
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Card Structure Inside Modal -->
+            <div class="card shadow">
+              <img
+                src="./media/dept-card-img-2.jpg"
+                class="card-img-top"
+                alt="Surgery Department"
+              />
+              <div class="card-body">
+                <h5 class="card-title"><b>Diagnostic and Support</b></h5>
+                <p class="card-text">
+                  Mayo Clinic is one of the largest and most experienced
+                  surgical practices in the world. Mayo has more than 300
+                  surgeons and 139 operating rooms among its three locations in
+                  <b>Arizona, Florida</b> and <b>Minnesota</b>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="./doctors-page.html" class="btn btn-primary">View All Doctors</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="emergencyCardModal"
+      tabindex="-1"
+      aria-labelledby="cardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cardModalLabel">
+              Emergency Department
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Card Structure Inside Modal -->
+            <div class="card shadow">
+              <img
+                src="./media/dept-card-img-2.jpg"
+                class="card-img-top"
+                alt="Surgery Department"
+              />
+              <div class="card-body">
+                <h5 class="card-title"><b>Emergency</b></h5>
+                <p class="card-text">
+                  Mayo Clinic is one of the largest and most experienced
+                  surgical practices in the world. Mayo has more than 300
+                  surgeons and 139 operating rooms among its three locations in
+                  <b>Arizona, Florida</b> and <b>Minnesota</b>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="./doctors-page.html" class="btn btn-primary">View All Doctors</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="specializedCardModal"
+      tabindex="-1"
+      aria-labelledby="cardModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cardModalLabel">
+              Specialized Care
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Card Structure Inside Modal -->
+            <div class="card shadow">
+              <img
+                src="./media/dept-card-img-2.jpg"
+                class="card-img-top"
+                alt="Surgery Department"
+              />
+              <div class="card-body">
+                <h5 class="card-title"><b>Specialized Care</b></h5>
+                <p class="card-text">
+                  Mayo Clinic is one of the largest and most experienced
+                  surgical practices in the world. Mayo has more than 300
+                  surgeons and 139 operating rooms among its three locations in
+                  <b>Arizona, Florida</b> and <b>Minnesota</b>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="./doctors-page.html" class="btn btn-primary">View All Doctors</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
